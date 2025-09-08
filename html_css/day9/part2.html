@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z-Index Hover Example</title>
+  <style>
+    .container {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      border: 2px solid black;
+      overflow: hidden;
+      margin: 10px;
+      display: flex;
+      display: inline-block;
+    }
+
+    /* Top image (by default visible) */
+    .img1 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 2;
+      transition: opacity 0.5s ease; /* smooth effect */
+    }
+
+    /* On hover -> hide top image */
+    .container:hover .img1 {
+      opacity: 0; /* top image gayab ho jayegi */
+    }
+
+    /* Background image (always below) */
+    .img2 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit:fill;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+    <h1> who created the JavaScript programming language ?</h1>
+    
+    <h5>hover on right answer</h5>
+  <div class="container">
+    <img src="don.jpg" class="img1">
+    <img src="https://www.shutterstock.com/image-vector/middle-finger-digital-eps-vector-600w-2470582095.jpg" class="img2">
+  </div>
+
+  <div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg/500px-Brendan_Eich_Mozilla_Foundation_official_photo.jpg" class="img1">
+    <img src="don.jpg" class="img2">
+  </div>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z-Index Swap Example</title>
+  <style>
+    .container {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      border: 2px solid black;
+      overflow: hidden;
+      margin: 10px;
+    }
+
+    .img1, .img2 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: z-index 0.3s, transform 0.3s; /* smoothness */
+    }
+
+    /* Default order */
+    .img1 { z-index: 2; }
+    .img2 { z-index: 1; }
+
+    /* On hover -> swap */
+    .container:hover .img1 { z-index: 1; }
+    .container:hover .img2 { z-index: 3; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="don.jpg" class="img1">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg/500px-Brendan_Eich_Mozilla_Foundation_official_photo.jpg" class="img2">
+  </div>
+</body>
+</html> -->

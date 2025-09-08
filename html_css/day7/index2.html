@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    ul{
+        width: 100px;
+        height: 200px;
+    }
+        /* li:first-child{
+            background-color: aqua;
+        }
+        li:nth-child(2n+1){
+            background-color: brown;
+
+        } */
+
+        /* p+li {
+            background-color: rgb(16, 219, 97);
+
+        } */
+a:link { color: blue; }      /* normal */
+a:visited { color: purple; } /* after clicked */
+a:hover { color: red; }      /* when mouse over */
+a:active { color: green; }   /* when clicked */
+a:focus { outline: 2px solid orange; } /* when tab focus */
+
+
+p:first-child { color: red; }    /* first child */
+p:last-child { color: blue; }    /* last child */
+p:nth-child(3n) { color: rgb(5, 244, 5); } /* 2nd child */
+
+input::placeholder{
+    color: rgb(182, 100, 160);
+    font-style:italic;
+
+
+}
+p::before {
+  content: "jay sh";
+  color: red;
+}
+
+p::after {
+  content: " ✔";
+  color: green;
+}
+
+</style>
+<body style="background-color: black;color:white;" >
+    <a href="google.com">Google</a>
+ <div>
+    <p>ram-1</p>
+    <p>ram-2</p>
+    <p>ram-3</p>
+    <p>ram-4</p>
+    <p>ram-5</p>
+    <p>ram-6</p>
+    <p>ram-7</p>
+    <p>ram-8</p>
+    <p>ram-9</p>
+    <p>ram-10</p>
+  </div>
+
+   <input type="text" placeholder="search kar la ">
+        <!-- <ul>
+            <li>Lorem ipsum dolor sit.</li>
+            <p></p>
+           <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+        </ul> -->
+   
+</body>
+</html>

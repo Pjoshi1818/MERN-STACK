@@ -1,0 +1,50 @@
+Day 1
+JavaScript Basics
+Runs on Chrome V8 Engine
+Synchronous language (but can behave as asynchronous in some cases)
+Scripting language
+Single-threaded
+Naming Conventions
+Snake Case → first_name
+Camel Case → firstName (used for variables & functions)
+Pascal Case → FirstName (commonly used for React components)
+
+********************************************************************************************************************
+Day 2
+Operators in JavaScript
+Arithmetic Operators
+
++ → Addition
+- → Subtraction
+* → Multiplication
+/ → Division
+% → Modulus (Remainder)
+
+Assignment Operators
+
+= → Assign
++= → Add and assign
+-= → Subtract and assign
+*= → Multiply and assign
+%= → Modulus and assign
+
+Comparison Operators
+
+== → Equal (checks value only)
+=== → Strict Equal (checks value + type)
+
+
+
+
+
+// falsy values → false, 0, -0, 0n (BigInt zero), null, undefined, NaN
+// truthy values → "0", "false", " ", [], {}, function(){}
+
+
+****************** Day 3  **********************
+
+
+loop on arr 
+
+
+array all methode 

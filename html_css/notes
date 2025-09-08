@@ -1,0 +1,225 @@
+🌟 Day 1 — HTML Basics
+
+🔹 Headings
+- h1 to h6 → different levels of headings
+
+🔹 Paragraph & Text
+- <p> → paragraph
+- <b> → bold text
+- <sub> → subscript (H₂O)
+- <sup> → superscript (eˣ)
+
+🔹 Links
+- <a href="url" target="_blank"> → hyperlink (open in new tab)
+
+🔹 Lists
+- <ol> → ordered list
+- <ul> → unordered list
+- <li> → list item
+
+🔹 Tables
+- <table>, <tr>, <td>, <th>
+- colspan / rowspan → merge columns & rows
+
+🔹 Forms
+- <input> → text, password, email, radio, checkbox, file, number, etc.
+- <select> <option> → dropdown
+- <button> → submit button
+- method="get/post" & action="url"
+
+🔹 Media
+- <img src="path" alt="desc">
+- <video src="..." controls>
+- <audio src="..." controls>
+- <iframe src="..."> → embed YouTube etc.
+
+🔹 Semantic Tags
+- <header>, <nav>, <main>, <section>, <article>, <footer>
+- Give meaning to structure (SEO + readability)
+
+🔹 Block-level Elements
+- <div>, <p>, <h1>-<h6>, <section>, <article>, <table>, <ul>, <ol>, <form>, <footer>, <header>, <nav>, etc.
+
+************************************************************************************************************************
+🌟 Day 2 — Domino’s Website (HTML + CSS Practice)  
+   (   display: flex;
+      justify-content: 
+      flex-wrap: wrap;) etc
+************************************************************************************************************************
+🌟 Day 3 — CSS Text 
+
+🔹 Text Properties
+- font-family → changes font style (e.g., sans-serif, serif, monospace)
+- font-size → size of text (px, em, rem, %)
+- font-weight → thickness (normal, bold, 100–900)
+
+- text-align → align text (left, right, center, justify)
+- text-decoration → underline, overline, line-through, styles (dotted, wavy, double, etc.)
+- text-shadow → adds shadow → text-shadow: x-offset y-offset blur color;
+- text-transform → capitalize, uppercase, lowercase
+
+************************************************************************************************************************
+🌟 Day 4 — Display, Borders, Units & Shadows  
+
+🔹 Display  
+- display: block → takes full width  
+- display: inline → fits content only  
+- display: inline-block → inline + allows height/width  
+- display: none → element disappears  
+- visibility: hidden → element hidden but space remains  
+
+🔹 Borders  
+- border-style → solid, dashed, dotted, double  
+- border-color → sets color of border  
+- border-width → top, right, bottom, left width  
+- border-radius → curves corners (px, %, multiple values)  
+- border-bottom-left-radius → curve specific corner  
+
+🔹 Box Model  
+- box-sizing: border-box → includes padding & border in width/height  
+
+🔹 Shadows  
+- box-shadow → element shadow → (x-offset, y-offset, blur, spread, color)  
+- text-shadow → text shadow  
+
+🔹 Units  
+- % → relative to parent  
+- vh (viewport height), vw (viewport width) → relative to screen size  
+- rem → relative to root (html) font-size  
+- em → relative to parent element font-size
+************************************************************************************************************************
+🌟 Day 5 — Navbar Practice  
+
+🔹 Navbar (Navigation Bar)  
+- Usually created using <nav> or <div>  
+- Contains <ul> (unordered list) and <li> items for links  
+- Links made using <a> tag  
+
+🔹 CSS for Navbar  
+- display: flex → arrange items in row  
+- justify-content: space-between / space-around / center  
+- align-items: center → vertical alignment  
+- background-color → set navbar color  
+- list-style: none → remove bullets  
+- text-decoration: none → remove underline from links  
+- padding & margin → spacing 
+************************************************************************************************************************
+
+🌟 Day 6 — CSS Grid  
+
+🔹 Grid Basics  
+- display: grid → enables grid layout  
+- grid-template-columns → defines column structure  
+   (ex: repeat(3, 1fr) → 3 equal columns)  
+- grid-template-rows → defines row structure  
+   (ex: repeat(auto-fill, minmax(100px, 1fr)) → auto-fit rows)  
+- gap → spacing between rows/columns  
+
+🔹 Grid Item Control  
+- grid-column-start / grid-column-end → position items horizontally  
+- grid-row-start / grid-row-end → position items vertically  
+- grid-column / grid-row → shorthand 
+
+************************************************************************************************************************
+🌟 Day 7 — CSS Selectors & Pseudo
+
+🔹 CSS Selectors
+1. Group Selector ( , )    -->  Apply same style to multiple elements at once.
+
+2. Descendant Selector ( space )  --> Selects elements inside another element.
+ 
+
+3. Child Selector ( > )  --> Selects only the direct child (not deeper).   
+                         --> Can be combined with :first-child, :last-child, :nth-child()
+
+4. Adjacent Sibling Selector ( + ) --> Selects the element just after another.
+
+5. General Sibling Selector ( ~ )  --> Selects all siblings after a specific element.
+  
+
+
+🔹 Pseudo Selectors
+(Pseudo selectors are of two types: Pseudo Classes + Pseudo Elements)
+
+
+🟢 Pseudo Classes -→ element states
+- :link        → normal link
+- :visited     → link after clicked
+- :hover       → when mouse is over
+- :active      → when link is clicked
+- :focus       → when element is focused (input, button etc.)
+- :first-child → first child of parent
+- :last-child  → last child of parent
+- :nth-child(n)→ nth child of parent
+
+⚡ Order for links: link → visited → hover → active  (LVHA)
+
+
+***********************************************************************************************************************
+
+🌟 Day 8 — CSS Position, Z-index & Transform
+
+🟡 Pseudo Elements → parts of elements
+- ::before      → add content before element
+- ::after       → add content after element
+- ::placeholder → style placeholder in input fields
+- ::selection   → style highlighted/selected text
+
+
+
+🔹 Position in CSS
+1. static (default)
+   - Normal flow of page
+   - top/right/bottom/left don't work
+
+2. relative
+   - Positioned relative to its normal place
+   - top/right/bottom/left shift element from its original spot
+
+3. absolute
+   - Positioned relative to the nearest positioned ancestor
+   - If no ancestor → relative to <html> (document body)
+
+4. fixed
+   - Positioned relative to the browser window
+   - Stays fixed while scrolling (ex: sticky header, floating button)
+
+5. sticky
+   - Acts like relative UNTIL a scroll limit is reached
+   - Then sticks to that position
+   - (ex: navbar that sticks at top while scrolling)
+
+
+🔹 Z-index
+- Controls stacking order of elements (which comes above which)
+- Higher z-index = appears on top
+- Works only on positioned elements (not static)
+
+
+🔹 Transform (2D basics)
+1. scale(x,y)
+   - Increases/decreases size
+   - Example: transform: scale(1.5);  → 150% bigger
+
+2. translate(x,y)
+   - Moves element along X and Y axis
+   - Example: transform: translate(50px, 20px);
+   - Positive → right/down, Negative → left/up
+
+   rotate 
+************************************************************************************************************************
+
+🌟 Day 9
+1. Media Queries
+
+👉 Used for responsive design (different styles for different screen sizes).
+
+2. CSS Variables
+
+👉 Reusable values (colors, fonts, sizes).
+
+Global variable → defined inside :root (accessible everywhere).
+
+Keyframes (Animation)
+
+👉 Used to define steps in an animation.

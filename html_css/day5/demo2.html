@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dominos</title>
+  <style>
+
+    * {
+      margin: 2px;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      border-radius: 60px;
+      background-color: #E31837;
+      color: white;
+      padding: 1rem 2rem;
+      width: 100%;
+    }
+
+    #papa {
+      border-radius: 60px;
+      min-height: 100vh;
+      width: 99%;
+      /* background-color: #E31837; */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; 
+    }
+
+    li img {
+      height: 3rem; 
+      width: 3rem;
+      border-radius: 50%;
+    }
+
+    nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      width: 90%;
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav li {
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    nav select {
+      
+     
+      border: none;
+      background-color: #E31837;
+      color: white;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 3rem 2rem;
+      flex-wrap: wrap;
+    }
+
+   
+
+    section img {
+      border-radius: 15%;
+      width: 25vw;   
+      max-width: 350px;
+      height: 200px;
+    }
+
+    /* Main styling */
+    main {
+      background-color: #fff;
+      color: #333;
+      padding: 2rem;
+      border-radius: 20px;
+      margin: 1rem auto;
+      width: 99%;
+      height: 600px;
+      text-align: center;
+    }
+
+    main h2 {
+      margin-bottom: 1rem;
+    }
+
+    /* Footer styling */
+    footer {
+      background-color: #B3132D;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      border-radius: 0 0 60px 60px;
+      font-size: 0.7rem;
+    }
+.photo-row {
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center;
+  flex-wrap: wrap; 
+  margin-top: 2rem;
+
+
+}
+
+.photo-row img {
+  height: 150px;
+  width: 100px;
+  border-radius: 15%;
+    box-shadow: 0px 2px 4px 5px #d44f65;
+}
+/* #copy img{
+  width: 100rem;
+  height: auto;
+  margin-top: 1000px;
+} */
+
+
+  </style>
+</head>
+<body>
+  <div id="papa">
+    <!-- Header -->
+    <header> 
+      <nav>
+        <ul>
+          <li>
+            <img src="./Basic_Element_15-30_(240).jpg" alt="Menu Logo">
+          </li>
+          <li>About</li>
+          <li>Jobs</li>
+          <li>Franchise with us</li>
+          <li>International</li>
+          <li>Investor</li>
+          <li>
+            <select>
+              <option value="">English</option>
+              <option value="india">Hindi</option>
+              <option value="usa">Punjabi</option>
+              <option value="uk">Tamil</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="hero">
+        <section>
+          <h1>Domino's</h1>
+          <h3>The best local offers</h3>
+          <h4>What special offers?<br> Find out</h4>
+        </section>
+
+        <section>
+          <img src="./pz.png" alt="Pizza Image">
+        </section>
+      </div>
+    </header>
+
+  <main>
+  <h2>Welcome to Domino's</h2>
+  <p>Here you can explore our delicious pizzas, special offers, and more. Scroll down to find out why Domino's is loved worldwide!</p>
+  
+
+  <div class="photo-row">
+    <img src="https://i.pinimg.com/236x/51/97/85/5197856c249935795e3189aacb1b105e.jpg" alt="Order"> 
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2MElIV2NWdBWI6PafVNrx5u2G3D3To0X92w&s" alt="">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqzVUwcO1SBtgyYOim1e5eTIUADMM2Yk83TQ&s" alt="">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMtBHbsTE88DAqh2jmFqqfQw04QTzcS8EWhA&s" alt="">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQrRuXhaDVrLNl3XVuUxQoxooH-5H58TvnhQ&s" alt="">
+  </div>
+
+  <div class="copy" >
+    <img src="./copy.png" alt="How it works">
+  </div>
+</main>
+
+
+
+    <footer>
+      <p>2025 Domino's Pizza Inc. | All Rights Reserved</p>
+    </footer>
+  </div>
+</body>
+</html>

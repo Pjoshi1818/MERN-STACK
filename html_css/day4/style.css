@@ -1,0 +1,81 @@
+/* display: inline-block; */
+            /* width: 200px;
+            height: 300px;
+            background-color: aqua;
+            padding: 2px;
+          margin: auto;
+          text-align: center;
+
+            display: flex;
+            align-items: center; */
+
+            /* border-style: dashed; */
+            /* border-color: blue; */
+            /* border-width:2px 3px 4px 5px; */
+            /* box-sizing: border-box;  IMP */
+            /* border-radius: 20px; */
+            /* border-bottom-left-radius: 20%; */
+            /* font-family:sans-serif; */
+            /* font-style: ; */
+
+            /* border-radius: 10px 20px 30px 40px; */
+            /* box-shadow: 0px 0px 10px 10px red; */
+
+            /* display: inline; */
+
+             /* background-color: aqua;
+               padding: 20px;
+            margin: 20px; */
+            /* display: none; */
+            /* visibility: hidden; */
+        /* } */
+
+
+
+        
+        /* #container2{ */
+            /* display: inline-block;
+            width: 300px;
+            height: 300px;
+            background-color: rgb(44, 161, 177);
+            padding: 20px;
+            margin: 20px; */
+            /* border-style: dashed; */
+            /* border-color: blue; */
+            /* border-width:2px 3px 4px 5px; */
+            /* box-sizing: border-box;  IMP */
+            /* border-radius: 20px; */
+            /* border-bottom-left-radius: 20%; */
+            /* font-family:sans-serif; */
+            /* margin-left: 50%; */
+            /* margin-bottom: 0%; */
+            /* font-style:oblique; */
+            
+
+            /* display: inline; */
+ /* background-color: aqua;
+               padding: 20px;
+            margin: 20px;
+            display: none; */
+            
+        /* } */
+
+        html{
+            font-size: 30px;
+        }
+
+        #box1{
+            /* height: 100vh; 
+            width: 1000vw; */
+            background-color: aqua;
+            font-size: 1rem;
+        }
+        #box2{
+            background-color: blue;
+            height: 50%;
+            width: 50%;
+            font-size: 0.5em;    
+            /* rem for root (html) */
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
