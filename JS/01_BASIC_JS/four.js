@@ -84,40 +84,40 @@
 // *** type conversion and type coercion ********************************************
 
 
-let score =98
+// let score =98
 
 
 // console.log(typeof score )
 // console.log(typeof (score)) ; 
 
-console.log(String(score));
-console.log(typeof String(score));
-console.log(typeof score);   
-console.log(Boolean(score));   
-let value = 5;
-let negvalue = -value
-// console.log(negvalue)*
-console.log(Boolean(negvalue)); 
+// console.log(String(score));
+// console.log(typeof String(score));
+// console.log(typeof score);   
+// console.log(Boolean(score));   
+// let value = 5;
+// let negvalue = -value
+// // console.log(negvalue)*
+// console.log(Boolean(negvalue)); 
 
 
-// **  question related to return true or alse 
-let vari = []; 
-console.log(String(vari));   // more question like this 
+// // **  question related to return true or alse 
+// let vari = []; 
+// console.log(String(vari));   // more question like this 
 
 
 
 
 // type coercion
 
-console.log(5+"5"-5+"10"+10);
+// console.log(5+"5"-5+"10"+10);
 
-console.log("5"+false);
-console.log([]+[]);
-console.log([]+{});
-console.log({}+[]);
+// console.log("5"+false);
+// console.log([]+[]);
+// console.log([]+{});
+// console.log({}+[]);
 
 
-console.log(![]+[]); // 0
+// console.log(![]+[]); // 0
 
 
 
@@ -125,16 +125,56 @@ console.log(![]+[]); // 0
 
 // ***********************************  SCOPE   *****************************
 
+'use strict'
 var c = 56      
 let a = 50       
 
-if (true) {
-    let a = 10   
-    const b = 20 
-    var c = 30 
-    console.log("INNER : ", a) // prints inner 'a' (10)
-}
+// if (true) {
+//     let a = 10   
+//     const b = 20 
+//     var c = 30 
+//     console.log("INNER : ", a) // prints inner 'a' (10)
+// }
 
+
+// scope chain 
+
+
+
+// {   let a = 5;
+//     {
+//         {
+//             {
+//                 // console.log(b);   // wrong 
+//                 { 
+//                     let b = 10; 
+//                     console.log(a); // right 
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+
+{
+    let a= 10;
+}
+a = 20;
+console.log(a);
+
+
+
+
+
+
+
+
+// ***************  Hoisiting  ****************
+
+// let const not sopport 
+
+// var support only 
 
 
 
