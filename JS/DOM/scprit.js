@@ -70,7 +70,7 @@
 
 // *************************TASK 1****************************
 
-const products=[
+const prod=[
   {
     "id": 1,
     "name": "Wireless Mouse",
@@ -317,7 +317,7 @@ const table = document.createElement('table');
 const thead = document.createElement('thead');
 const headerRow = document.createElement('tr');
 
-Object.keys(products[0]).forEach(key => {
+Object.keys(prod[0]).forEach(key => {
   const th = document.createElement('th');
   th.textContent = key;  
   th.style.border = '1px solid black';
@@ -327,16 +327,34 @@ thead.appendChild(headerRow);
 table.appendChild(thead);
 const tbody = document.createElement('tbody');
 
-products.forEach(item => {
+// prod.forEach(item => {
+//   const tr = document.createElement('tr');
+//   Object.values(item).forEach(value => {
+//     const td = document.createElement('td');
+//     td.textContent = value;
+//     td.style.border = '1px solid black'; 
+//     tr.appendChild(td);
+//   });
+//   tbody.appendChild(tr);
+// });
+
+
+document.getElementById("bt").addEventListener("click",function(){
+  prod.forEach(item => {
   const tr = document.createElement('tr');
   Object.values(item).forEach(value => {
     const td = document.createElement('td');
     td.textContent = value;
-    td.style.border = '1px solid black';
-    td.style.padding = '8px';
+    td.style.border = '1px solid black'; 
     tr.appendChild(td);
   });
   tbody.appendChild(tr);
 });
+
+})
+
+
+
+
 table.appendChild(tbody);
 document.body.appendChild(table);
