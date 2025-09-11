@@ -1,4 +1,3 @@
-const frm = document.querySelector('#fm');
 
 frm.addEventListener('submit',function(e){
     e.preventDefault();
