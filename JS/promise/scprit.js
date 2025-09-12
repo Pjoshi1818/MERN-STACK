@@ -94,22 +94,35 @@
 // })
 // console.log("Hello world");
 
-const fetchData = ()=>{
-    return fetch("https://fakestoreapi.com/products");    
-}
+// const fetchData = ()=>{
+//     return fetch("https://fakestoreapi.com/products");    
+// }
 
-fetchData()
-.then((res)=>{
-   return res.json()
-})
-.then((data)=>{
-    let tbody = document.getElementById("tbody");
-    data.forEach((item) => {
-        let tr = document.createElement("tr");
-        tr.innerHTML = `<td>${item.id}</td><td>${item.title}</td><td>${item.price}</td><td>${item.category}</td><td>${item.rating.rate}</td>`;
-        tbody.appendChild(tr);
-    });
-})
-.catch((error)=>{
-    console.log(error)
-})
+// fetchData()
+// .then((res)=>{
+//    return res.json()
+// })
+// .then((data)=>{
+//     let tbody = document.getElementById("tbody");
+//     data.forEach((item) => {
+//         let tr = document.createElement("tr");
+//         tr.innerHTML = `<td>${item.id}</td><td>${item.title}</td><td>${item.price}</td><td>${item.category}</td><td>${item.rating.rate}</td>`;
+//         tbody.appendChild(tr);
+//     });
+// })
+// .catch((error)=>{
+//     console.log(error)
+// })
+
+
+// const fetchData = async()=>{
+//   const responce = await  fetch("https://fakestoreapi.com/products")   
+//   const data = await responce.json();
+//   console.log(data);
+//    let tbody = document.getElementById("tbody");
+// }
+
+
+
+//  ***********   event loop ************** 
+
