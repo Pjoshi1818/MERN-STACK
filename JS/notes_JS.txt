@@ -48,3 +48,6 @@ loop on arr
 
 
 array all methode 
+
+
+promise contain future value 
