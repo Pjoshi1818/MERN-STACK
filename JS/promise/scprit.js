@@ -116,7 +116,7 @@
 
 
 // const fetchData = async()=>{
-//   const responce = await  fetch("https://fakestoreapi.com/products")   
+//   const responce = await  fetch("https://fakes toreapi.com/products")   
 //   const data = await responce.json();
 //   console.log(data);
 //    let tbody = document.getElementById("tbody");

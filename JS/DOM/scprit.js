@@ -338,8 +338,8 @@ const tbody = document.createElement('tbody');
 //   tbody.appendChild(tr);
 // });
 
-
-document.getElementById("bt").addEventListener("click",function(){
+let show = document.getElementById("bt");
+show.addEventListener("click",function(){
   prod.forEach(item => {
   const tr = document.createElement('tr');
   Object.values(item).forEach(value => {
@@ -351,6 +351,13 @@ document.getElementById("bt").addEventListener("click",function(){
   tbody.appendChild(tr);
 });
 
+})
+let hide = document.getElementById('bt2');
+hide.addEventListener("click",function(){
+   tbody.style.display = "none";
+})
+show.addEventListener("click",function(){
+   tbody.style.display = "";
 })
 
 
