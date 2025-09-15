@@ -14,5 +14,5 @@
 //second     
               // ************************** 2. ES Modules (ESM) ************************************
               // Standardized in modern JavaScript & browsers
- import { sum } from "./function.js";
-console.log(sum(2, 3));
+//  import { sum } from "./function.js";
+// console.log(sum(2, 3));
