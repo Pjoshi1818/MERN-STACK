@@ -1,0 +1,18 @@
+***********************  Day 1 ******************************
+React app structure (index.html → main.jsx → App.jsx → Components).
+How to use import/export (default vs named).
+How React renders components into root div using createRoot.
+
+
+   ===>   any function (or class) in React that returns JSX (looks like HTML but is actually JavaScript syntax) is called a React Component.
+
+
+<>  </>    --> " is called a Fragment (short syntax).  "
+
+
+**--> What is a Fragment?
+
+A Fragment lets you return multiple elements without adding an extra <div> (or other wrapper) to the DOM.
+
+
+**************************  Day 2 **************************
