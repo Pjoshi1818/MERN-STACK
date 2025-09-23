@@ -1,42 +1,52 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Home from './Home'
+import Card from "./Card";
+import { Condition } from "./Condition";
+import Effect from "./Effect";
+import Effect1 from "./Effect1";
+import Hooks from "./Hooks";
+import Navebar from "./Navebar";
 
 function App() {
-  const [count, setCount] = useState(0)
+  let data = [
+    {
+      title:"Samsung S24 Ultra",
+      description : "This is s series of samsung",
+      image : "https://www.celletronic.com/wp-content/uploads/2024/01/Samsung-Galaxy-S24-ULTRA-BLACK.jpg"
+    },
+    {
+      title : "Iphone 15 Pro",
+      description : "This is 15 series of apple",
+      image : "https://tse4.mm.bing.net/th/id/OIP.nllcfnkWcA_a2ZRF7xtFDQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+    },
+    {
+      title : "Google Pixel 9",
+      description  : "This is pixel series of google",
+      image : "https://static1.anpoimages.com/wordpress/wp-content/uploads/2024/08/google-pixel-9.png"
+    },
+    {
+      title : "Poco",
+      description : "This is Poco phone",
+      image : "https://akm-img-a-in.tosshub.com/indiatoday/images/device/1683297893Poco-c51-blue-1-800x800_one_to_one.jpg?VersionId=93pTgPM4yvA0C8ms.2qZ_hR67OuKh6RV"
+    },
+  ];
 
   return (
-    // <>
-    //   <div>
-    //     <a href="https://vite.dev" target="_blank">
-    //       <img src={viteLogo} className="logo" alt="Vite logo" />
-    //     </a>
-    //     <a href="https://react.dev" target="_blank">
-    //       <img src={reactLogo} className="logo react" alt="React logo" />
-    //     </a>
-    //   </div>
-    //   <h1>Vite + React</h1>
-    //   <div className="card">
-    //     <button onClick={() => setCount((count) => count + 1)}>
-    //       count is {count}
-    //     </button>
-    //     <p>
-    //       Edit <code>src/App.jsx</code> and save to test HMR
-    //     </p>
-    //   </div>
-    //   <p className="read-the-docs">
-    //     Click on the Vite and React logos to learn more
-    //   </p>
-    // </>
-
-
-
     <div>
-      <Home/>
+      {data.map((item, index) => (
+        <Card 
+          key={index}
+          title={item.title} 
+          description={item.description} 
+          image={item.image} 
+        />
+      ))}
+
+      {/* <Hooks /> */}
+      {/* <Effect /> */}
+      {/* <Effect1 /> */}
+      {/* <Condition /> */}
+      {/* <Navebar />  */}
     </div>
-  )
+  );
 }
 
 export default App;
