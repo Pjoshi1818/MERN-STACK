@@ -1,0 +1,43 @@
+.login{
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  height: 100vh;     
+   
+
+
+}
+body{
+  background-color: #383838;
+}
+input{
+  height: 40px;
+  width: 350px;
+  border-radius: 10px;
+
+}
+input::placeholder{
+ color: rgb(0, 0, 0);
+ padding: 10px;
+
+}
+button{
+  height: 50px;
+  border-radius: 10px;
+}
+button:focus-within{
+  background-color: rgb(68, 68, 180);
+}
+
+#IN{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  flex-direction: column;
+  height: 600px;
+  width: 650px; 
+  gap : 20px
+
+}
