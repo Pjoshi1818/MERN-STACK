@@ -1,4 +1,4 @@
-.login{
+/* .login{
   display: flex;
   justify-content: center;  
   align-items: center;      
@@ -14,19 +14,24 @@ input{
   height: 40px;
   width: 350px;
   border-radius: 10px;
+  border: 2px solid gray;
+  box-shadow: 1px 1px 20px 0px #505051;
 
 }
 input::placeholder{
- color: rgb(0, 0, 0);
+ color: rgb(27, 26, 26);
  padding: 10px;
 
 }
 button{
   height: 50px;
   border-radius: 10px;
+    box-shadow: 1px 1px 20px 0px #404041;
+      border: 2px solid gray;
 }
-button:focus-within{
+button:focus{
   background-color: rgb(68, 68, 180);
+    box-shadow: 1px 1px 20px 0px #1d1dd2;
 }
 
 #IN{
@@ -40,4 +45,50 @@ button:focus-within{
   width: 650px; 
   gap : 20px
 
+} */
+
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+}
+
+.container{
+    /* height: 100vh; */
+    /* width: 700px; */
+    background-color: rgb(232, 232, 232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 700px;
+    /* height: 100vh; */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 0px #c2c2c2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px;
+}
+
+input , button{
+    padding: 10px;
+    width: 70%;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 20px 0px #c2c2c2;
+    border-radius: 5px;
+}
+
+button{
+    background-color: rgba(51, 51, 227, 0.724);
+    color: white;
+    font-weight: 700;
+    width: 74%;
 }
