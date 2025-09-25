@@ -16,32 +16,27 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // }
 
 // export default AppRouter
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Login from "./Login";
+import Home from "./Home";
+import Dashbord from "./Dashbord";
+import Parent from "./Parent";
 
-import Login from './Login'
-import Home from './Home'
-import Dashbord from './Dashbord'
-import Parent from './Parent'
-import {createBrowserRouter} from 'react-router-dom'
-
-const AppRouter = createBrowserRouter([
-  
-  {  element : <Parent />,
-    children : [
-      {
-        path : "/dashboard",
-        element : <Dashbord />
-      },
-      {
-        path : "/home",
-        element : <Home />
-      },
-      {
-       path : "/login",
-       element : <Login />
-      }
-     
-    ]
-  }
+const router = createBrowserRouter([
+  {
+    element: <Parent />,
+    children: [
+      { path: "/dashboard", element: <Dashbord /> },
+      { path: "/home", element: <Home /> },
+      { path: "/login", element: <Login /> },
+    ],
+  },
 ]);
 
+
+function AppRouter() {
+  return <RouterProvider router={router} />;
+}
+
 export default AppRouter;
+

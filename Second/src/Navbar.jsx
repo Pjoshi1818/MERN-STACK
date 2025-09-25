@@ -38,9 +38,12 @@ const Navbar = () => {
 
  <ul style={{listStyleType : "none" , display : "flex" , gap :  "10px"}}>
                 
-                <li> <Link to= "/home ">HOME </Link></li>
-                <li> <Link to= "/dashbord ">DASHBORD</Link></li>
-                <li> <Link to= "/login">LOGIN </Link></li>
+              <ul style={{ listStyleType: "none", display: "flex", gap: "10px" }}>
+  <li><Link to="/home">HOME</Link></li>
+  <li><Link to="/dashboard">DASHBOARD</Link></li>
+  <li><Link to="/login">LOGIN</Link></li>
+</ul>
+
                 
             </ul>
 
