@@ -47,7 +47,7 @@ button:focus{
 
 } */
 
-body{
+ body{
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -56,8 +56,8 @@ body{
 }
 
 .container{
-    /* height: 100vh; */
-    /* width: 700px; */
+     height: 100vh; 
+     width: 700px; 
     background-color: rgb(232, 232, 232);
     display: flex;
     justify-content: center;
@@ -66,7 +66,7 @@ body{
 
 .form{
     width: 700px;
-    /* height: 100vh; */
+     height: 100vh; 
     background-color: white;
     border-radius: 10px;
     box-shadow: 1px 1px 20px 0px #c2c2c2;
@@ -91,4 +91,25 @@ button{
     color: white;
     font-weight: 700;
     width: 74%;
+} 
+
+#nv{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+#pt{
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
 }
