@@ -1,9 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import AppRouter from "./AppRouter";
+import App from "./App";
+import { CountProvider } from "./CountContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <AppRouter />
+    <CountProvider>
+      <App />
+    </CountProvider>
   </React.StrictMode>
 );
