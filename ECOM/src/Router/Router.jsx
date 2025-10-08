@@ -1,7 +1,5 @@
 import React from 'react'
-import OpenRoutes from '../OpenRoutes'
-import React from 'react'
-import { createBrowserRouter } from 'react-router-dom'
+import { createBrowserRouter, Navigate } from 'react-router-dom'
 import OpenRoutes from '../OpenRoutes'
 import Product from '../openRoutes/Product'
 import ProductById from '../openRoutes/ProductById'
@@ -9,12 +7,14 @@ import Cart from '../openRoutes/Cart'
 import Wishlist from '../openRoutes/Wishlist'
 import ProtectedRoutes from '../ProtectedRoutes'
 import Orders from '../customer/Orders'
-import SellerProduct from '../seller/SellerProduct'
-import SellerOrder from '../seller/SellerOrder'
+import SellerProducts from "../seller/SellerProducts";
+import SellerOrders from "../seller/SellerOrders";
+
 import UnprotectedRoute from '../UnprotectedRoute'
-import AdminProduct from '../admin/AdminProduct'
-import AdminUser from '../admin/AdminUser'
-import AdminOrder from '../admin/AdminOrder'
+import AdminProducts from "../Admin/AdminProducts";
+import AdminUser from "../Admin/AdminUser";
+import AdminOrder from "../Admin/AdminOrder";
+
 import Dashboard from '../sellerAdmin/Dashboard'
 import Profile from '../sellerAdminCustomer/Profile'
 import Login from '../unprotectedRoutes/Login'
@@ -26,10 +26,14 @@ const Router = createBrowserRouter([
     {
         path : "/home",
         element : <OpenRoutes />,
-          children : [
+        children : [
             {
                 path : "",
-                element :<Home />
+                element : <Home />
+            },
+            {
+                    path:"*",
+                    element:<Navigate to ="home" replace />
             },
             {
                 path : "products",
@@ -62,7 +66,79 @@ const Router = createBrowserRouter([
                 element : <Orders />
             }
         ]
-    }
+    },
+    {
+        path : "/seller",
+        element : <ProtectedRoutes allowedRole={["SELLER"]} />,
+        children : [
+         {
+  path: "sellerproduct",
+  element: <SellerProducts />  
+},
+{
+  path: "sellerorder",
+  element: <SellerOrders /> 
+},
+        ]
+    },
+    {
+        path : "/Admin",
+        element : <ProtectedRoutes allowedRole={["ADMIN"]} />,
+        children : [
+            {
+                path : "adminproduct",
+                element : <AdminProducts />
+            },
+            {
+                path : "adminuser",
+                element : <AdminUser />
+            },
+            {
+                path : "adminorder",
+                element : <AdminOrder />
+            }
+        ]
+    },
+    {
+        path : "/selleradmin",
+        element :  <ProtectedRoutes allowedRole={["SELLER" , "ADMIN"]} />,
+        children : [
+            {
+                path : "dashboard",
+                element : <Dashboard />
+            }
+        ]
+    },
+    {
+        path :  "/selleradmincustomer",
+        element : <ProtectedRoutes allowedRole={["SELLER" , "ADMIN" , "CUSTOMER"]} />,
+        children : [
+            {
+                path : "profile",
+                element : <Profile />
+            }
+        ]
+    },
+    {
+        path : "/auth",
+        element  : <UnprotectedRoute />,
+        children : [
+            {
+                path : "login",
+                element : <Login />
+            },
+            {
+                path : "signup",
+                element : <Signup />
+            }
+        ]
+    },
+    {
+  path: "*",
+  element: <Navigate to="/home" replace />
+}
+
 ])
 
 export default Router
+
