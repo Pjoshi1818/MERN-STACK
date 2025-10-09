@@ -2,7 +2,10 @@ import React from 'react'
 
 const AdminOrder = () => {
   return (
-    <div>AdminOrder</div>
+    <div>
+      ADMIN : AdminOrder 
+
+    </div>
   )
 }
 

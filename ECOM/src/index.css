@@ -149,13 +149,15 @@ ul{
 
 .link{
     text-decoration: none;
-    color: rgb(84, 84, 84);
+    color: rgb(12, 12, 12);
 }
 
 .link:hover{
-    color: black;
+    color: rgb(25, 18, 30);
 }
 
 #logout{
     width: 100%;
+
+    width: 100vw;
 }
