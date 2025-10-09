@@ -40,7 +40,7 @@ const Login = () => {
             <form style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", gap: "20px" }} onSubmit={handleSubmit}>
 
 
-                <input type="email" placeholder='Email' name='email' onChange={handleChange} value={formData.email} />
+                <input  type="email" placeholder='Email' name='email' onChange={handleChange} value={formData.email} />
 
                 <input type="password" placeholder='Password' name='password' onChange={handleChange} value={formData.password} />
 
